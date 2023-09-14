@@ -1,0 +1,34 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Mpage.master.vb" Inherits="Sem5.Mpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="width:100%;">
+                <tr>
+                    <td>Heder
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/LabGuide/LabProgram1.aspx">HyperLink</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>footer<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Files/FileProgram1.aspx">HyperLink</asp:HyperLink>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
